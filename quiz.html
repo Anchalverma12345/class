@@ -1,0 +1,77 @@
+<!Doctype html>
+<html>
+<head>
+<meta name="viewport" content="with-device-width, initial-scale=1.0">
+<title>Online Quiz</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+<link href="https://fonts.googleapis.com/css2? family=Exo+2:wgt@60&family=Exo:ital,wght@1,600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="substyle.css">
+</head>
+<body>
+<header class="header">
+<section class="flex">
+<a href="index.html" class="logo"><img src="images/download.png"></a>
+<h1>Toppers Classes</h1>
+</section>
+</header>
+<button onclick="history.back()">Go Back</button>
+<script src="subscript.js"></script>
+<div id="cotainer">
+<div id="start">Start Quiz</div>
+<div id="guide">
+<h2> Quiz Guide</h2>
+<h4>1. You Have Only 15 Seconds For Each Question.</h4>
+<h4>2. Once You Select Your AnswerIt can't Be Undone.</h4>
+<h4>3. You'll Get Points On The Basic of Correct Answer.</h4>
+<h4>4. You Can't Exit From The Quiz while You Are Playing.</h4>
+<div id="button">
+<button id="exit">Exit</button>
+<button id="continue">Continue</button>
+</div>
+</div>
+<!-- quiz section-->
+<div id="quiz">
+<div id="quiz_header">
+<h5>Amazing Quiz</h5>
+<div id="timer">
+<h6>Time Left</h6>
+<h6 id="time">00</h6>
+</div>
+</div>
+
+<!-- quiz question-->
+<div id="question">
+<h2 id="questionNo">1.</h2>
+<h2 id ="questionText">HTML Stand For</h2>
+</div>
+<!-- quiz choices-->
+<div id="optionList">
+<h4 class="choice_que" id="option1">Hyper Text Markup Language</h4>
+<h4 class="choice_que" id="option2">Hyper Test Markup Language</h4>
+<h4 class="choice_que" id="option3">Hyper Text Mackup Language</h4>
+<h4 class="choice_que" id="option4">Hyper Transfer Markup Language</h4>
+</div>
+<!--answer section-->
+<div  id="answersSection">
+<h3 id ="total_correct">3of 10 Questions</h3>
+<h3 id="next_question">Next</h3>
+</div>
+</div>
+<!--result-->
+<div id="result">
+<i class="fas fa-trophy"></i>
+<h6>You are Completed The Quiz</h6>
+<h6 id="points">You Got 4 Out of 10</h6>
+<button id="quit">Quit Quiz</button>
+<button id="StarAgain">start Again</button>
+</div>
+</div>
+<script src="questions.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
